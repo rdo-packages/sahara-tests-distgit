@@ -59,6 +59,7 @@ This project contains OpenStack Sahara tests tempest plugin
 Summary:        OpenStack Sahara test scenario plugin
 
 Requires:       openstack-%{service} = %{version}-%{release}
+Requires:       python-os-client-config
 
 %description -n python-%{service}-scenario
 This project contains OpenStack Sahara tests scenario plugin

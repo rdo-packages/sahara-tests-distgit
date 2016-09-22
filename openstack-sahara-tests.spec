@@ -9,7 +9,7 @@
 %global service sahara-tests
 Name:           openstack-%{service}
 Version:        0.2.1
-Release:        0%{?alphatag}%{?dist}
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
 URL:            http://launchpad.net/%{service}/
@@ -145,5 +145,5 @@ mv %{buildroot}/usr/etc/* %{buildroot}%{_sysconfdir}/
 %endif
 
 %changelog
-* Thu Sep 22 2016 Alfredo Moralejo <amoralej@redhat.com> 0.2.1-0.81a18a75git
+* Thu Sep 22 2016 Alfredo Moralejo <amoralej@redhat.com> 0.2.1-0.1.81a18a75git
 - Update to post 0.2.0 (81a18a7532457b7ae2d6322f9ca84a62eca7da79)

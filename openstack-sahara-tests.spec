@@ -9,7 +9,7 @@
 %global service sahara-tests
 Name:           openstack-%{service}
 Version:        0.2.1
-Release:        0%{?alphatag}%{?dist}
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
 URL:            http://launchpad.net/%{service}/

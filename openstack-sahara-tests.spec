@@ -39,6 +39,7 @@ Requires:       python-six
 Requires:       python-tempest
 Requires:       python-testrepository
 Requires:       python-testtools
+Requires:       python-os-client-config
 
 # test dependencies requirements
 BuildRequires:    python-mock

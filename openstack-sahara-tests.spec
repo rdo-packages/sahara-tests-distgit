@@ -1,20 +1,15 @@
-%{!?upstream_version: %global upstream_version %{commit}}
-%global commit 81a18a7532457b7ae2d6322f9ca84a62eca7da79
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global with_doc %{!?_without_doc:1}%{?_without_doc:0}
 
 %global service sahara-tests
 Name:           openstack-%{service}
-Version:        0.2.1
-Release:        0.1%{?alphatag}%{?dist}
+Version:        0.3.0
+Release:        1%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
 URL:            http://launchpad.net/%{service}/
 
-Source0:        https://github.com/openstack/%{service}/archive/%{commit}.tar.gz#/%{service}-%{shortcommit}.tar.gz
+Source0:        https://tarballs.openstack.org/%{service}/%{service}-%{upstream_version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  git
@@ -145,5 +140,8 @@ mv %{buildroot}/usr/etc/* %{buildroot}%{_sysconfdir}/
 %endif
 
 %changelog
+* Tue Oct 04 2016 Alfredo Moralejo <amoralej@redhat.com> 0.3.0-1
+- Update to 0.3.0
+
 * Thu Sep 22 2016 Alfredo Moralejo <amoralej@redhat.com> 0.2.1-0.1.81a18a75git
 - Update to post 0.2.0 (81a18a7532457b7ae2d6322f9ca84a62eca7da79)

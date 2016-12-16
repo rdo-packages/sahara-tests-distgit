@@ -140,3 +140,4 @@ mv %{buildroot}/usr/etc/* %{buildroot}%{_sysconfdir}/
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/sahara-tests/commit/?id=5c5ebfa52e07cb61365680a03e20a477175d9047

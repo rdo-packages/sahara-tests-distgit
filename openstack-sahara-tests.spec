@@ -86,6 +86,8 @@ rm -rf {test-,}requirements.txt
 
 # docs generation
 %if 0%{?with_doc}
+# newest reno seems to require this
+touch sahara_tests.egg-info/requires.txt
 %{__python2} setup.py build_sphinx
 # Fix hidden-file-or-dir warnings
 rm -fr doc/build/html/.doctrees doc/build/html/.buildinfo

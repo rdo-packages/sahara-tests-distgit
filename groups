@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-f8e9b3985270647fc0a8fef3c92be9ed7bb01418       	openstack/sahara-tests-distgit-core
-c526c5365540a327d4d3f8329593bd0d1330f8bb        	openstack/sahara-tests-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+c526c5365540a327d4d3f8329593bd0d1330f8bb	openstack/sahara-tests-distgit-ptl
+f8e9b3985270647fc0a8fef3c92be9ed7bb01418	openstack/sahara-tests-distgit-core
+global:Registered-Users                 	Registered Users

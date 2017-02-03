@@ -22,21 +22,21 @@ Requires:       python-setuptools
 Requires:       python-mako
 Requires:       python-fixtures
 Requires:       python-jsonschema
-Requires:       python-oslo-concurrency
-Requires:       python-oslo-serialization
-Requires:       python-oslo-utils
-Requires:       python-oslotest
+Requires:       python-oslo-concurrency >= 3.5.0
+Requires:       python-oslo-serialization >= 1.10.0
+Requires:       python-oslo-utils >= 3.5.0
+Requires:       python-oslotest >= 1.10.0
 Requires:       python-os-testr
 Requires:       python-paramiko
-Requires:       python-keystoneauth1
-Requires:       python-glanceclient
-Requires:       python-novaclient
-Requires:       python-saharaclient
-Requires:       python-swiftclient
-Requires:       python-neutronclient
+Requires:       python-keystoneauth1 >= 2.1.0
+Requires:       python-glanceclient >= 1:2.0.0
+Requires:       python-novaclient >= 1:2.29.0
+Requires:       python-saharaclient >= 0.13.0
+Requires:       python-swiftclient >= 2.2.0
+Requires:       python-neutronclient >= 4.2.0
 Requires:       python-rfc3986
 Requires:       python-six
-Requires:       python-tempest
+Requires:       python-tempest >= 12.2.0
 Requires:       python-testrepository
 Requires:       python-testtools
 
@@ -59,7 +59,7 @@ This project contains OpenStack Sahara tests tempest plugin
 Summary:        OpenStack Sahara test scenario plugin
 
 Requires:       openstack-%{service} = %{version}-%{release}
-Requires:       python-os-client-config
+Requires:       python-os-client-config >= 1.13.1
 
 %description -n python-%{service}-scenario
 This project contains OpenStack Sahara tests scenario plugin

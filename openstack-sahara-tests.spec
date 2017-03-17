@@ -139,6 +139,7 @@ mv %{buildroot}/usr/etc/* %{buildroot}%{_sysconfdir}/
 %doc doc/build/html
 %endif
 
+
 %changelog
 * Tue Oct 04 2016 Alfredo Moralejo <amoralej@redhat.com> 0.3.0-1
 - Update to 0.3.0

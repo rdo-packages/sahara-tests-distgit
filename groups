@@ -1,5 +1,9 @@
-# UUID                                  	Group Name
-#
-c526c5365540a327d4d3f8329593bd0d1330f8bb	openstack/sahara-tests-distgit-ptl
-f8e9b3985270647fc0a8fef3c92be9ed7bb01418	openstack/sahara-tests-distgit-core
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+5cea9c97fdc8aadef5d25b5a13ab2d9dddad45f1	openstack/sahara-tests-core
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+global:Anonymous-Users	Anonymous Users
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
+4ff4071a2ae892e1240d8abe9b9c3cad02adb8f2	openstack/sahara-tests-ptl

@@ -69,7 +69,7 @@ This project contains OpenStack Sahara tests scenario plugin
 Summary:          Documentation for OpenStack Sahara Tests
 
 BuildRequires:    python-sphinx
-BuildRequires:    python-oslo-sphinx
+BuildRequires:    python-openstackdocstheme
 BuildRequires:    python-reno
 %description      doc
 This package contains the openstack sahara-tests Documentation files.

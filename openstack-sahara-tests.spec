@@ -42,7 +42,6 @@ Requires:       python-testtools
 
 # test dependencies requirements
 BuildRequires:    python-mock
-BuildRequires:    python-coverage
 
 %description
 This project contains Sahara-scenario test framework.

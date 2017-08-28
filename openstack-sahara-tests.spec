@@ -18,7 +18,6 @@ BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 
 Requires:       python-pbr
-Requires:       python-setuptools
 Requires:       python-mako
 Requires:       python-fixtures
 Requires:       python-jsonschema
@@ -26,7 +25,7 @@ Requires:       python-oslo-concurrency >= 3.5.0
 Requires:       python-oslo-serialization >= 1.10.0
 Requires:       python-oslo-utils >= 3.5.0
 Requires:       python-oslotest >= 1.10.0
-Requires:       python-os-testr
+Requires:       python-os-testr >= 0.8.0
 Requires:       python-paramiko
 Requires:       python-keystoneauth1 >= 2.1.0
 Requires:       python-glanceclient >= 1:2.0.0

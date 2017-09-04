@@ -35,7 +35,7 @@ Requires:       python-swiftclient >= 2.2.0
 Requires:       python-neutronclient >= 4.2.0
 Requires:       python-rfc3986
 Requires:       python-six
-Requires:       python-tempest >= 12.2.0
+Requires:       python-tempest >= 16.0.0
 Requires:       python-testrepository
 Requires:       python-testtools
 

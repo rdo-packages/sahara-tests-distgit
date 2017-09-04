@@ -3,7 +3,7 @@
 
 %global service sahara-tests
 Name:           openstack-%{service}
-Version:        0.4.1
+Version:        0.5.0
 Release:        1%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
@@ -35,7 +35,7 @@ Requires:       python-swiftclient >= 2.2.0
 Requires:       python-neutronclient >= 4.2.0
 Requires:       python-rfc3986
 Requires:       python-six
-Requires:       python-tempest >= 12.2.0
+Requires:       python-tempest >= 16.0.0
 Requires:       python-testrepository
 Requires:       python-testtools
 
@@ -138,5 +138,8 @@ mv %{buildroot}/usr/etc/* %{buildroot}%{_sysconfdir}/
 %endif
 
 %changelog
+* Mon Sep 04 2017 Luigi Toscano <ltoscano@redhat.com> 0.5.0-1
+- Update to 0.5.0
+
 * Wed Aug 30 2017 Chandan Kumar <chkumar@redhat.com> 0.4.1-1
 - Update to 0.4.1

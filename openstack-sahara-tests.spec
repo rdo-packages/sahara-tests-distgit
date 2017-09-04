@@ -3,7 +3,7 @@
 
 %global service sahara-tests
 Name:           openstack-%{service}
-Version:        0.4.1
+Version:        0.5.0
 Release:        1%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
@@ -138,5 +138,8 @@ mv %{buildroot}/usr/etc/* %{buildroot}%{_sysconfdir}/
 %endif
 
 %changelog
+* Mon Sep 04 2017 rdo-trunk <javier.pena@redhat.com> 0.5.0-1
+- Update to 0.5.0
+
 * Wed Aug 30 2017 Chandan Kumar <chkumar@redhat.com> 0.4.1-1
 - Update to 0.4.1

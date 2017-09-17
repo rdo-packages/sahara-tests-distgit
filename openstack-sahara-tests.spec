@@ -69,6 +69,7 @@ Summary:          Documentation for OpenStack Sahara Tests
 BuildRequires:    python-sphinx
 BuildRequires:    python-openstackdocstheme
 BuildRequires:    python-reno
+BuildRequires:    openstack-macros
 %description      doc
 This package contains the openstack sahara-tests Documentation files.
 %endif
@@ -77,7 +78,7 @@ This package contains the openstack sahara-tests Documentation files.
 %autosetup -n %{service}-%{upstream_version} -S git
 
 # Let RPM handle the dependencies
-rm -rf {test-,}requirements.txt
+%py_req_cleanup
 
 %build
 %{__python2} setup.py build

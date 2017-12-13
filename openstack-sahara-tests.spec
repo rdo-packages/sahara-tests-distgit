@@ -13,9 +13,13 @@ Source0:        https://tarballs.openstack.org/%{service}/%{service}-%{upstream_
 BuildArch:      noarch
 
 BuildRequires:  git
+BuildRequires:  openstack-macros
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
+
+# test dependencies requirements
+BuildRequires:    python-mock
 
 Requires:       python-pbr
 Requires:       python-mako
@@ -38,9 +42,6 @@ Requires:       python-six
 Requires:       python-tempest >= 16.0.0
 Requires:       python-testrepository
 Requires:       python-testtools
-
-# test dependencies requirements
-BuildRequires:    python-mock
 
 %description
 This project contains Sahara-scenario test framework.
@@ -69,7 +70,7 @@ Summary:          Documentation for OpenStack Sahara Tests
 BuildRequires:    python-sphinx
 BuildRequires:    python-openstackdocstheme
 BuildRequires:    python-reno
-BuildRequires:    openstack-macros
+
 %description      doc
 This package contains the openstack sahara-tests Documentation files.
 %endif

@@ -1,8 +1,4 @@
-%{!?upstream_version: %global upstream_version %{commit}}
-%global commit a2027280cd66f7dcc2437318e057158d1db5b625
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global with_doc %{!?_without_doc:1}%{?_without_doc:0}
 
 %if 0%{?fedora}
@@ -12,13 +8,13 @@
 %global service sahara-tests
 %global pkgname sahara
 Name:           openstack-%{service}
-Version:        0.5.1
-Release:        0.1%{?alphatag}%{?dist}
+Version:        0.6.0
+Release:        1%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
 URL:            http://launchpad.net/%{service}/
 
-Source0:        https://github.com/openstack/%{service}/archive/%{commit}.tar.gz#/%{service}-%{shortcommit}.tar.gz
+Source0:        https://tarballs.openstack.org/%{service}/%{service}-%{upstream_version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  git
@@ -277,5 +273,8 @@ stestr-3 --test-path $OS_TEST_PATH run
 %endif
 
 %changelog
+* Fri Feb 23 2018 Luigi Toscano <ltoscano@redhat.com> 0.6.0-1
+ - Update to 0.6.0
+
 * Thu Feb 22 2018 Chandan Kumar <chkumar@redhat.com> 0.5.1-0.1.a2027280git
 - Update to pre-release 0.5.1 (a2027280cd66f7dcc2437318e057158d1db5b625)

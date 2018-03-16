@@ -273,3 +273,4 @@ stestr-3 --test-path $OS_TEST_PATH run
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/sahara-tests/commit/?id=e84415d6d276c23c2a14f4fd4a78c941f02bfdeb

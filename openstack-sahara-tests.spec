@@ -9,7 +9,7 @@
 %global pkgname sahara
 Name:           openstack-%{service}
 Version:        0.6.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
 URL:            http://launchpad.net/%{service}/
@@ -26,6 +26,7 @@ This project contains Sahara-scenario test framework.
 %package -n python2-%{pkgname}-tempest
 Summary:        OpenStack Sahara tempest plugin common library
 %{?python_provide:%python_provide python2-%{pkgname}-tempest}
+Obsoletes:      openstack-%{service} < 0.6.0
 Provides:       openstack-%{service} = %{version}-%{release}
 
 BuildRequires:  python2-devel
@@ -273,6 +274,9 @@ stestr-3 --test-path $OS_TEST_PATH run
 %endif
 
 %changelog
+* Wed Mar 21 2018 Luigi Toscano <ltoscano@redhat.com> 0.6.0-2
+- Fix the upgrade from Pike
+
 * Fri Feb 23 2018 Luigi Toscano <ltoscano@redhat.com> 0.6.0-1
  - Update to 0.6.0
 

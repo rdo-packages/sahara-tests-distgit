@@ -26,6 +26,7 @@ This project contains Sahara-scenario test framework.
 %package -n python2-%{pkgname}-tempest
 Summary:        OpenStack Sahara tempest plugin common library
 %{?python_provide:%python_provide python2-%{pkgname}-tempest}
+Obsoletes:      openstack-%{service} < %{version}-%{release}
 Provides:       openstack-%{service} = %{version}-%{release}
 
 BuildRequires:  python2-devel

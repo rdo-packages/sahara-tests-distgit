@@ -49,7 +49,7 @@ Requires:       python2-mako
 BuildRequires:  python2-mako
 %else
 Requires:       python-mako
-BuildRequires:       python-mako
+BuildRequires:  python-mako
 %endif
 Requires:       python2-fixtures
 Requires:       python2-jsonschema
@@ -57,7 +57,7 @@ Requires:       python2-oslo-concurrency >= 3.5.0
 Requires:       python2-oslo-serialization >= 1.10.0
 Requires:       python2-oslo-utils >= 3.5.0
 Requires:       python2-oslotest >= 1.10.0
-Requires:       python2-os-testr >= 0.8.0
+Requires:       python2-stestr >= 1.0.0
 Requires:       python2-paramiko
 Requires:       python2-keystoneauth1 >= 2.1.0
 Requires:       python2-glanceclient >= 1:2.0.0
@@ -68,7 +68,6 @@ Requires:       python2-neutronclient >= 4.2.0
 Requires:       python2-rfc3986
 Requires:       python2-six
 Requires:       python2-tempest >= 16.0.0
-Requires:       python2-testrepository
 Requires:       python2-testtools
 
 %description -n python2-%{pkgname}-tempest
@@ -121,7 +120,7 @@ Requires:       python3-oslo-concurrency >= 3.5.0
 Requires:       python3-oslo-serialization >= 1.10.0
 Requires:       python3-oslo-utils >= 3.5.0
 Requires:       python3-oslotest >= 1.10.0
-Requires:       python3-os-testr >= 0.8.0
+Requires:       python3-stestr >= 1.0.0
 Requires:       python3-paramiko
 Requires:       python3-keystoneauth1 >= 2.1.0
 Requires:       python3-glanceclient >= 1:2.0.0
@@ -132,7 +131,6 @@ Requires:       python3-neutronclient >= 4.2.0
 Requires:       python3-rfc3986
 Requires:       python3-six
 Requires:       python3-tempest >= 16.0.0
-Requires:       python3-testrepository
 Requires:       python3-testtools
 
 %description -n python3-%{pkgname}-tempest

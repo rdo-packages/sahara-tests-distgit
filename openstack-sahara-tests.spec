@@ -53,21 +53,21 @@ BuildRequires:       python-mako
 %endif
 Requires:       python2-fixtures
 Requires:       python2-jsonschema
-Requires:       python2-oslo-concurrency >= 3.5.0
-Requires:       python2-oslo-serialization >= 1.10.0
-Requires:       python2-oslo-utils >= 3.5.0
+Requires:       python2-oslo-concurrency >= 3.25.0
+Requires:       python2-oslo-serialization >= 2.18.0
+Requires:       python2-oslo-utils >= 3.33.0
 Requires:       python2-oslotest >= 1.10.0
-Requires:       python2-os-testr >= 0.8.0
+Requires:       python2-stestr >= 1.1.0
 Requires:       python2-paramiko
-Requires:       python2-keystoneauth1 >= 2.1.0
-Requires:       python2-glanceclient >= 1:2.0.0
-Requires:       python2-novaclient >= 1:2.29.0
-Requires:       python2-saharaclient >= 0.13.0
-Requires:       python2-swiftclient >= 2.2.0
-Requires:       python2-neutronclient >= 4.2.0
+Requires:       python2-keystoneauth1 >= 3.4.0
+Requires:       python2-glanceclient >= 1:2.10.0
+Requires:       python2-novaclient >= 1:10.1.0
+Requires:       python2-saharaclient >= 1.5.0
+Requires:       python2-swiftclient >= 3.5.0
+Requires:       python2-neutronclient >= 6.7.0
 Requires:       python2-rfc3986
 Requires:       python2-six
-Requires:       python2-tempest >= 16.0.0
+Requires:       python2-tempest >= 1:18.0.0
 Requires:       python2-testrepository
 Requires:       python2-testtools
 
@@ -117,21 +117,21 @@ Requires:       python3-pbr
 Requires:       python3-mako
 Requires:       python3-fixtures
 Requires:       python3-jsonschema
-Requires:       python3-oslo-concurrency >= 3.5.0
-Requires:       python3-oslo-serialization >= 1.10.0
-Requires:       python3-oslo-utils >= 3.5.0
+Requires:       python3-oslo-concurrency >= 3.25.0
+Requires:       python3-oslo-serialization >= 2.18.0
+Requires:       python3-oslo-utils >= 3.33.0
 Requires:       python3-oslotest >= 1.10.0
-Requires:       python3-os-testr >= 0.8.0
+Requires:       python3-stestr >= 1.1.0
 Requires:       python3-paramiko
-Requires:       python3-keystoneauth1 >= 2.1.0
-Requires:       python3-glanceclient >= 1:2.0.0
-Requires:       python3-novaclient >= 1:2.29.0
-Requires:       python3-saharaclient >= 0.13.0
-Requires:       python3-swiftclient >= 2.2.0
-Requires:       python3-neutronclient >= 4.2.0
+Requires:       python3-keystoneauth1 >= 3.4.0
+Requires:       python3-glanceclient >= 1:2.10.0
+Requires:       python3-novaclient >= 1:10.1.0
+Requires:       python3-saharaclient >= 1.5.0
+Requires:       python3-swiftclient >= 3.5.0
+Requires:       python3-neutronclient >= 6.7.0
 Requires:       python3-rfc3986
 Requires:       python3-six
-Requires:       python3-tempest >= 16.0.0
+Requires:       python3-tempest >= 1:18.0.0
 Requires:       python3-testrepository
 Requires:       python3-testtools
 

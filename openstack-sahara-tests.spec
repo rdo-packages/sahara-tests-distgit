@@ -98,6 +98,7 @@ Summary:        OpenStack Sahara test scenario plugin
 
 Requires:       python%{pyver}-%{pkgname}-tempest = %{version}-%{release}
 Requires:       python%{pyver}-os-client-config >= 1.13.1
+Requires:       python%{pyver}-botocore >= 1.5.1
 
 %description -n python%{pyver}-%{service}-scenario
 This project contains OpenStack Sahara tests scenario plugin

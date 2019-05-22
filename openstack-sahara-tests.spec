@@ -148,6 +148,7 @@ mv %{buildroot}/usr/etc/* %{buildroot}%{_sysconfdir}/
 export OS_TEST_PATH='./sahara_tests/unit/scenario'
 export PATH=$PATH:$RPM_BUILD_ROOT/usr/bin
 export PYTHONPATH=$PWD
+export PYTHON=%{pyver_bin}
 stestr-%{pyver} --test-path $OS_TEST_PATH run
 
 %files -n python%{pyver}-%{pkgname}-tempest

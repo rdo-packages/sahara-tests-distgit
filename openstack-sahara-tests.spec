@@ -48,6 +48,7 @@ BuildRequires:  python-mako
 %else
 Requires:       python%{pyver}-mako
 BuildRequires:  python%{pyver}-mako
+BuildRequires:  /usr/bin/pathfix.py
 %endif
 
 # test dependencies requirements
@@ -59,6 +60,8 @@ BuildRequires:    python%{pyver}-saharaclient
 BuildRequires:    python%{pyver}-tempest
 BuildRequires:    python%{pyver}-swiftclient
 BuildRequires:    python%{pyver}-stestr
+
+
 
 Requires:       python%{pyver}-fixtures
 Requires:       python%{pyver}-jsonschema
@@ -125,6 +128,10 @@ This package contains the openstack sahara-tests Documentation files.
 %py_req_cleanup
 chmod +x sahara_tests/scenario/runner.py
 chmod +x sahara_tests/scenario/defaults/edp-examples/edp-shell/shell-example.sh
+
+%if %{pyver} == 3
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" sahara_tests/scenario/runner.py
+%endif
 
 %build
 %{pyver_build}

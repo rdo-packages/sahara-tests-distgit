@@ -17,7 +17,7 @@
 %global service sahara-tests
 %global pkgname sahara
 Name:           openstack-%{service}
-Version:        0.8.0
+Version:        0.9.0
 Release:        1%{?dist}
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
@@ -191,6 +191,9 @@ stestr-%{pyver} --test-path $OS_TEST_PATH run
 %endif
 
 %changelog
+* Thu Jul 04 2019 RDO <dev@lists.rdoproject.org> 0.9.0-1
+- Update to 0.9.0
+
 * Wed Apr 03 2019 RDO <dev@lists.rdoproject.org> 0.8.0-1
 - Update to 0.8.0
 

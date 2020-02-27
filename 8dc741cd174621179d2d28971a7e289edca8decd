@@ -1,0 +1,8 @@
+Code-Review+2: Luigi Toscano <ltoscano@redhat.com>
+Workflow+1: Luigi Toscano <ltoscano@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 27 Feb 2020 17:45:44 +0000
+Reviewed-on: https://review.rdoproject.org/r/25439
+Project: openstack/sahara-tests-distgit
+Branch: refs/heads/train-rdo

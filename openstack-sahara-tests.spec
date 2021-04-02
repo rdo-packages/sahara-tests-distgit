@@ -7,8 +7,8 @@
 %global service sahara-tests
 %global pkgname sahara
 Name:           openstack-%{service}
-Version:        0.13.0
-Release:        1%{?dist}
+Version:        XXX
+Release:        XXX
 Summary:        Sahara Scenario Test Framework
 License:        ASL 2.0
 URL:            http://launchpad.net/%{service}/
@@ -190,6 +190,3 @@ stestr --test-path $OS_TEST_PATH run
 %endif
 
 %changelog
-* Fri Apr 02 2021 RDO <dev@lists.rdoproject.org> 0.13.0-1
-- Update to 0.13.0
-

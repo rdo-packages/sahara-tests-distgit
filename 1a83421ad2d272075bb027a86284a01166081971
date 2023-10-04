@@ -1,0 +1,8 @@
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Workflow+1: Luigi Toscano <ltoscano@redhat.com>
+Code-Review+2: Luigi Toscano <ltoscano@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 04 Oct 2023 15:14:59 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/sahara-tests-distgit/+/50309
+Project: openstack/sahara-tests-distgit
+Branch: refs/heads/bobcat-rdo
